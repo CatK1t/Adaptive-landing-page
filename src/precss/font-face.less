@@ -1,0 +1,30 @@
+// @font-face mixin.
+.font-face(@family, @filename: @family, @weight: normal, @style: normal){
+    @font-face{
+      font-family: @family;
+      src: url('../fonts/@{filename}/@{filename}.ttf') format('truetype');
+      font-weight: @weight;
+      font-style: @style;
+    }
+  }
+
+/*
+@family: имя шрифта (обязательно).
+@filename: название шрифта, так же используется в качестве id для шрифта в формате svg (обязательно, по умолчанию используется имя шрифта).
+@weight: жирность шрифта (не обязательно, по умолчанию normal).
+@style: стиль шрифта (не обязательно, по умолчанию normal).
+
+Пример использования:
+
+.font-face(Roboto Slab, RobotoSlab-Bold, bold);
+*/
+
+/* 
+html{
+    background-image: url( '../img/PixelPerfect.jpg' );
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 0;
+}
+ */
